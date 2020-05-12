@@ -1,8 +1,8 @@
-import React from "react";
+import React, { PureComponent } from "react";
 import Button from "./Button"
 import "../App.css";
 
-class ControlBlock extends React.PureComponent {
+class ControlBlock extends PureComponent {
   render = ({ inc, reset, dec } = this.props) => {
        
 
