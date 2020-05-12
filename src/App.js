@@ -46,10 +46,7 @@ class App extends Component {
             maxValue={this.maxValue}
             minValue={this.minValue}
           />
-          <ControlBlock
-            value={this.state.currentValue}
-            maxValue={this.maxValue}
-            minValue={this.minValue}
+          <ControlBlock 
             inc={this.increaseValue}
             dec={this.decreaseValue}
             reset={this.resetValue}

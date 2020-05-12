@@ -3,26 +3,16 @@ import Button from "./Button"
 import "../App.css";
 
 class ControlBlock extends React.PureComponent {
-  render = ({ value, maxValue, minValue, inc, reset, dec } = this.props) => {
-    const isDisabledInc = value < maxValue ? false : true;
-    const isDisabledDec = value > minValue ? false : true;
-    const isDisabledClassInc =
-      value < maxValue ? "" : "disable";
-    const isDisabledClassDec =
-      value > minValue ? "" : "disable";
+  render = ({ inc, reset, dec } = this.props) => {
+       
+
     return (
       <div className="controlBlock">
-        <Button title={"Inc"}
-          style={isDisabledClassInc}
-          disabled={isDisabledInc}
+        <Button title={"Inc"}          
           action={inc} />
-        <Button title={"Reset"}
-          style={isDisabledClassInc}
-          disabled={isDisabledInc}
+        <Button title={"Reset"}          
           action={reset} />
-        <Button title={"Dec"}
-          style={isDisabledClassDec}
-          disabled={isDisabledDec}
+        <Button title={"Dec"}          
           action={dec} />
       </div>
     );
