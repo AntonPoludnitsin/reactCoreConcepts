@@ -13,22 +13,22 @@ const el = React.createElement(
       fontSize: "45px"
     }
   },
-  "My counter"
+  "Hello World"
 );
-
-/*  const title = {
+const title = {
   color: "#fff",
   textAlign: "center",
   marginTop: "50px",
   fontSize: "45px"
 }; 
 
-const el1 = <h1 style={title}>My counter</h1>; */
+const el1 = <h1 style={title}>My counter</h1>;
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <>
     {el}
+    {el1}
     <App />
   </>,
   rootElement
